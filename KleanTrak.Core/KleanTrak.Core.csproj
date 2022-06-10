@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C9D58CF0-8447-4B1F-ADB9-B6DEC3ABBA83}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KleanTrak.Core</RootNamespace>
+    <AssemblyName>KleanTrak.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Crypto.cs" />
+    <Compile Include="CycleManager.cs" />
+    <Compile Include="DbConnection.cs" />
+    <Compile Include="DBManager.cs" />
+    <Compile Include="DbRecord.cs" />
+    <Compile Include="DbRecordset.cs" />
+    <Compile Include="Devices.cs" />
+    <Compile Include="DeviceStateChangeData.cs" />
+    <Compile Include="Dictionary.cs" />
+    <Compile Include="CoreConstants.cs" />
+    <Compile Include="ExpiringStateManager.cs" />
+    <Compile Include="HexConverter.cs" />
+    <Compile Include="Info.cs" />
+    <Compile Include="MedivatorDBAnalyzer.cs" />
+    <Compile Include="MedivatorHistoryDBManager.cs" />
+    <Compile Include="Operations.cs" />
+    <Compile Include="Operators.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="PWPCantelMDG.cs" />
+    <Compile Include="ReaderRfid.cs" />
+    <Compile Include="Readers.cs" />
+    <Compile Include="RfidReaderManager.cs" />
+    <Compile Include="SPCantelEndoDry.cs" />
+    <Compile Include="SPCantelEndoDry.EndoStoreProtocol.cs" />
+    <Compile Include="WPCantelAdvPassThroughV30016Old.cs" />
+    <Compile Include="WPCantelAdvPassThroughV30016.cs" />
+    <Compile Include="WPCantelMedivatorsSerial.cs" />
+    <Compile Include="StateTransactions.cs" />
+    <Compile Include="WPBase.cs" />
+    <Compile Include="SPCantelEdc.cs" />
+    <Compile Include="WPCantel.cs" />
+    <Compile Include="WPMirth.cs" />
+    <Compile Include="WasherManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WPIMS7.cs" />
+    <Compile Include="WPISAWD.cs" />
+    <Compile Include="WPCantelMedivatorsXXX.cs" />
+    <Compile Include="PWPSteelcoEPW100.cs" />
+    <Compile Include="WPSteelco.cs" />
+    <Compile Include="WPICT.cs" />
+    <Compile Include="Washers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Commons\Commons.csproj">
+      <Project>{1e12cc98-028a-42c2-be50-c791accb6d65}</Project>
+      <Name>Commons</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FxwLib\FxwLib.csproj">
+      <Project>{615864c3-5885-4fe8-93e0-ebcf6a3f0d4e}</Project>
+      <Name>FxwLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KleanTrack.License\KleanTrack.License.csproj">
+      <Project>{d58e3829-973e-49f9-9fce-63090b9e63d7}</Project>
+      <Name>KleanTrack.License</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KleanTrak.Model\KleanTrak.Model.csproj">
+      <Project>{e57e6826-99b5-4b93-8907-4433772d5afd}</Project>
+      <Name>KleanTrak.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KleanTrak.Rfid\KleanTrak.Rfid.csproj">
+      <Project>{ed8ae2f7-7adb-48d4-8dc3-2fbe60fb4779}</Project>
+      <Name>KleanTrak.Rfid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OdbcExtensions\OdbcExtensions.csproj">
+      <Project>{dfd96021-e5ea-4ed1-9210-43fb4530cbbb}</Project>
+      <Name>OdbcExtensions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="TestFiles\ISAWD\ISAWD_FINAL_RECEIPT.txt" />
+    <Content Include="TestFiles\ISAWD\ISAWD_FIRST_RECEIPT.txt" />
+    <Content Include="TestFiles\ISAWD\ISAWD_UPDATED_RECEIPT.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

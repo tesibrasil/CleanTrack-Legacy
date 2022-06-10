@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<HIS Header="Protocollo ENDODRY™">
+  <IN Header="Carico">
+    <EndoStore Caption="ENDODRY™:" SerialNo="Numero seriale" GroupID="Gruppo numero" StorageUnitNo="Posizione di stoccaggio N°">
+      <SerialNo>CM00439</SerialNo>
+      <GroupID>1</GroupID>
+      <Side>Master</Side>
+      <StorageUnitNo>3</StorageUnitNo>
+    </EndoStore>
+    <Owner Caption="Proprietario" Name="Nome" Department="Dipartimento" Street="Via" Number="N°" ZIP="CAP" City="Città">
+      <Name>Humanitas</Name>
+      <Department>Endoscopia</Department>
+      <Street>Via Manzoni</Street>
+      <Number>56</Number>
+      <ZIP>20089</ZIP>
+      <City>Rozzano</City>
+    </Owner>
+    <Instrument Caption="Endoscopio:" Barcode="Codice  a barre" Name="Nome" MaxStorageTime="Tempo di stoccaggio massimo (ore)">
+      <Barcode>41</Barcode>
+      <Name>41</Name>
+      <MaxStorageTime>720</MaxStorageTime>
+    </Instrument>
+    <PutIn Caption="Carico:" Time="Data / Orario" UserName="Nome utente" UserBarcode="Codice a barre utente">
+      <Time>2017-09-01T18:59:40</Time>
+      <UserName>Operatore Generico</UserName>
+      <UserBarcode>100</UserBarcode>
+    </PutIn>
+    <Processdata Caption="Dati di processo:" Patientinfo="Informazioni sul paziente" SecurityCheck="Query di sicurezza" WdRunCycle="Ciclo (reprocessing)" ActualRunCycle="Ciclo corrente" ProcessResult="Risultato del processo" LastRunCycle="Ultimo ciclo" Runtime="Tempo di stoccaggio">
+      <Patientinfo>
+      </Patientinfo>
+      <SecurityCheck>0</SecurityCheck>
+      <WdRunCycle>0</WdRunCycle>
+      <ActualRunCycle>0</ActualRunCycle>
+      <ProcessResult>1</ProcessResult>
+      <LastRunCycle>0</LastRunCycle>
+      <Runtime>0 d 00:00:00</Runtime>
+    </Processdata>
+  </IN>
+</HIS>

@@ -1,0 +1,29 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:CleanTrackPi.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		    xmlns:msv="clr-namespace:CleanTrackPi.Views"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+			  x:CompileBindings="True"
+			  x:DataType="vm:MainWindowViewModel"
+        x:Class="CleanTrackPi.Views.MainWindow"
+		    CornerRadius="10">
+  <Design.DataContext>
+    <vm:MainWindowViewModel/>
+  </Design.DataContext>
+  <Grid ShowGridLines="False">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"></RowDefinition>
+      <RowDefinition Height="8*"></RowDefinition>
+    </Grid.RowDefinitions>
+
+    <Border CornerRadius="10">
+      <msv:HeaderView Grid.Row="0"  Name="Header" IsVisible="True" Margin="5 5 5 0" Background="{Binding HeaderColor}"/>
+    </Border>
+
+    <msv:NotFoundView Grid.Row="1" Margin="15" Name="PageNotFound" IsVisible="{Binding PageNotFoundVisibility}"/>
+
+    <msv:BarcodeView Grid.Row="1" Margin="15" Name="BarCode" IsVisible="{Binding BarcodeVisibility}"/>
+  </Grid>
+</UserControl>

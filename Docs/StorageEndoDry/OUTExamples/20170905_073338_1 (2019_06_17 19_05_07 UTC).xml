@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<HIS Header="Protocollo ENDODRY™">
+  <OUT Header="Scarico">
+    <EndoStore Caption="ENDODRY™:" SerialNo="Numero seriale" GroupID="Gruppo numero" StorageUnitNo="Posizione di stoccaggio N°">
+      <SerialNo>CM00439</SerialNo>
+      <GroupID>1</GroupID>
+      <Side>Master</Side>
+      <StorageUnitNo>2</StorageUnitNo>
+    </EndoStore>
+    <Owner Caption="Proprietario" Name="Nome" Department="Dipartimento" Street="Via" Number="N°" ZIP="CAP" City="Città">
+      <Name>Humanitas</Name>
+      <Department>Endoscopia</Department>
+      <Street>Via Manzoni</Street>
+      <Number>56</Number>
+      <ZIP>20089</ZIP>
+      <City>Rozzano</City>
+    </Owner>
+    <Instrument Caption="Endoscopio:" Barcode="Codice  a barre" Name="Nome" MaxStorageTime="Tempo di stoccaggio massimo (ore)">
+      <Barcode>5</Barcode>
+      <Name>EG-590ZW</Name>
+      <MaxStorageTime>720</MaxStorageTime>
+    </Instrument>
+    <PutIn Caption="Carico:" Time="Data / Orario" UserName="Nome utente" UserBarcode="Codice a barre utente">
+      <Time>2017-09-04T17:37:56</Time>
+      <UserName>OP 117</UserName>
+      <UserBarcode>117</UserBarcode>
+    </PutIn>
+    <TakeOut Caption="Scarico:" Time="Data / Orario" UserName="Nome utente" UserBarcode="Codice a barre utente">
+      <Time>2017-09-05T07:33:37</Time>
+      <UserName>OP 118</UserName>
+      <UserBarcode>118</UserBarcode>
+    </TakeOut>
+    <Processdata Caption="Dati di processo:" Patientinfo="Informazioni sul paziente" SecurityCheck="Query di sicurezza" WdRunCycle="Ciclo (reprocessing)" ActualRunCycle="Ciclo corrente" ProcessResult="Risultato del processo" LastRunCycle="Ultimo ciclo" Runtime="Tempo di stoccaggio">
+      <Patientinfo>
+      </Patientinfo>
+      <SecurityCheck>0</SecurityCheck>
+      <WdRunCycle>0</WdRunCycle>
+      <ActualRunCycle>10</ActualRunCycle>
+      <ProcessResult>0</ProcessResult>
+      <LastRunCycle>0</LastRunCycle>
+      <Runtime>0 d 13:55:41</Runtime>
+    </Processdata>
+    <Events Header="Evento  durante l'operazione:" />
+  </OUT>
+</HIS>

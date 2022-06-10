@@ -1,0 +1,52 @@
+﻿using System;
+
+namespace It.IDnova.Fxw
+{
+  public class BulkTxfrEvent
+  {
+    private bool _isValid = false;
+
+    public BulkTxfrEvent.BULK_TXFR_EVENT type { get; set; }
+
+    public int rtxCnt { get; set; }
+
+    public byte[] hash { get; set; }
+
+    public BulkTxfrEvent(RfidMsg msg)
+    {
+      this._isValid = false;
+      try
+      {
+        if ((int) msg.CommandIdentifier != 231)
+          return;
+        byte[] payload = msg.getPayload();
+        this.type = (BulkTxfrEvent.BULK_TXFR_EVENT) payload[0];
+        this.rtxCnt = 15 & (int) payload[1];
+        if (this.type == BulkTxfrEvent.BULK_TXFR_EVENT.BULK_MODE_ENTERED)
+        {
+          this.hash = new byte[20];
+          Array.Copy((Array) payload, 4, (Array) this.hash, 0, 20);
+        }
+      }
+      catch
+      {
+        return;
+      }
+      this._isValid = true;
+    }
+
+    public bool isValid()
+    {
+      return this._isValid;
+    }
+
+    public enum BULK_TXFR_EVENT : byte
+    {
+      ACK_BLOCK = 0,
+      BULK_MODE_ENTERED = 1,
+      ACK_LAST_BLOCK = 2,
+      TIMEOUT = 3,
+      MAX_RETRY = 255,
+    }
+  }
+}

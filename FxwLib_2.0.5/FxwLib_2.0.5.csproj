@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: D:\Sorgenti\BRZ\FxwLib.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5898E0AD-C6F4-443C-82CA-80E0AF5C6FF6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>FxwLib</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>2.0.5.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>It.IDnova.Fxw</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IFxwPhysicalLayer.cs" />
+    <Compile Include="FxwTcp.cs" />
+    <Compile Include="FxwKbd.cs" />
+    <Compile Include="AbstractRfidReader.cs" />
+    <Compile Include="AbstractReaderWorker.cs" />
+    <Compile Include="StandAloneIoDefs.cs" />
+    <Compile Include="FxwInfo.cs" />
+    <Compile Include="FxwPhysicalType.cs" />
+    <Compile Include="PhysicalReceiveDataHandler.cs" />
+    <Compile Include="RfidDefs.cs" />
+    <Compile Include="RfidReader.cs" />
+    <Compile Include="BulkTxfrEvent.cs" />
+    <Compile Include="RfidMsg.cs" />
+    <Compile Include="AbstractFxwLog.cs" />
+    <Compile Include="ReaderWorker.cs" />
+    <Compile Include="FxwUsb.cs" />
+    <Compile Include="FxwLog.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="ReaderInfo.cs" />
+    <Compile Include="DeviceConfig.cs" />
+    <Compile Include="Signature.cs" />
+    <Compile Include="RfidUtils.cs" />
+    <Compile Include="Tag245\TemperatureLogMode.cs" />
+    <Compile Include="Tag245\TemperatureLogsPerPacket.cs" />
+    <Compile Include="Tag245\RfidTagMsg.cs" />
+    <Compile Include="Tag245\RfidTagReply.cs" />
+    <Compile Include="Tag245\RfidTagServiceData.cs" />
+    <Compile Include="Tag245\RfidTagAsynchId.cs" />
+    <Compile Include="Tag245\RfidTagLogSet.cs" />
+    <Compile Include="Tag245\TemperatureTagSettings.cs" />
+    <Compile Include="Tag245\SleepingTagSettings.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

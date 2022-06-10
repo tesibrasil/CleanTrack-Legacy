@@ -1,0 +1,18 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="CleanTrackPi.Views.StartUpView"
+		    xmlns:view="clr-namespace:CleanTrackPi.Views"
+		    xmlns:vm="using:CleanTrackPi.ViewModels"
+		    Icon="/Assets/avalonia-logo.ico"
+        Title="CleanTrackPi"
+		    TransparencyLevelHint="Mica"
+	      Background="Transparent"
+		    ExtendClientAreaToDecorationsHint="False">
+  <Grid RowDefinitions="*, 32">
+    <view:MainWindow Name="MainView" Grid.Row="0" DockPanel.Dock="Top"/>
+    <TextBox Grid.Row="1" Name="barcode" HorizontalAlignment="Center" KeyDown="OnBarcodeCompose"/>
+  </Grid>
+</Window>

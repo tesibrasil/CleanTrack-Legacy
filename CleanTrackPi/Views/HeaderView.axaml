@@ -1,0 +1,22 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+					   xmlns:vm="using:CleanTrackPi.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="CleanTrackPi.Views.HeaderView">
+
+	<Design.DataContext>
+		<vm:MainWindowViewModel/>
+	</Design.DataContext>
+  
+	<Border Name="HeaderBorder" CornerRadius="10" >
+		<Grid>
+			<TextBlock Text="CLEANTRACK" FontSize="30" Margin="15 0 0 0" VerticalAlignment="Center" FontWeight="Bold" Name="Title"/>
+      <Button Click="OnInfo" HorizontalAlignment="Right" 
+              Background="Transparent" VerticalAlignment="Bottom">
+          <Image Source="avares://CleanTrackPi/Assets/logo-tesiSmall2.png"  HorizontalAlignment="Right" Height="48"/>
+      </Button>
+    </Grid>
+	</Border>	
+</UserControl>

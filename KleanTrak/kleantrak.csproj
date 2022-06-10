@@ -1,0 +1,617 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8F565C58-F96A-4775-989D-746B32A3EE02}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>idr_main.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>KleanTrak</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>kleanTrak</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>C:\cleantrack\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>1591</NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>
+    </DocumentationFile>
+    <FileAlignment>4096</FileAlignment>
+    <NoWarn>1591</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8C37A34B1EFB293FFACD706EAF6691C1ED767D10</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>KleanTrak_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="forms\ChooseItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ChooseItem.Designer.cs">
+      <DependentUpon>ChooseItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\ChooseSeed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ChooseSeed.Designer.cs">
+      <DependentUpon>ChooseSeed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\CicliDispositivoDettaglio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\CicliDispositivoDettaglio.Designer.cs">
+      <DependentUpon>CicliDispositivoDettaglio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\ConfigurazioneScadenzaDispositivi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ConfigurazioneScadenzaDispositivi.Designer.cs">
+      <DependentUpon>ConfigurazioneScadenzaDispositivi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\ConfigurazioneTransazioni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ConfigurazioneTransazioni.Designer.cs">
+      <DependentUpon>ConfigurazioneTransazioni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\ChangeStateGeneric.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ConfigurazioneStatiDispositiviItemNewEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ConfigurazioneStatiDispositiviItemNewEdit.Designer.cs">
+      <DependentUpon>ConfigurazioneStatiDispositiviItemNewEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmDateSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmDateSelect.Designer.cs">
+      <DependentUpon>FrmDateSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FrmReceiptsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmReceiptsView.Designer.cs">
+      <DependentUpon>FrmReceiptsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FrmRecepitDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmRecepitDetails.Designer.cs">
+      <DependentUpon>FrmRecepitDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\InsertText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\InsertText.Designer.cs">
+      <DependentUpon>InsertText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\LicenseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\LicenseForm.Designer.cs">
+      <DependentUpon>LicenseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\SediUO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\SediUO.Designer.cs">
+      <DependentUpon>SediUO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintLine.cs" />
+    <Compile Include="State.cs" />
+    <None Include="kleantrack_ORACLE.ini" />
+    <None Include="kleantrack_SQLSERVER.ini" />
+    <None Include="kleantrak.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="KleanTrak_TemporaryKey.pfx" />
+    <None Include="log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="resources\ArrowIconDown.png" />
+    <None Include="resources\ArrowIconUp.png" />
+    <None Include="app.config" />
+    <Compile Include="forms\AdditionalInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\AdditionalInfo.Designer.cs">
+      <DependentUpon>AdditionalInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\ChangeStateBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\StampaScontrino.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\KMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\KMessageBox.Designer.cs">
+      <DependentUpon>KMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\Causali.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ChangePinUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\CheckUtente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Chiavi_Log_Transazioni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\CicliDispositivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\KleanTrak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ConfigurazioneStatiDispositivi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ConfigurazioneStatiDispositivi.Designer.cs">
+      <DependentUpon>ConfigurazioneStatiDispositivi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Database.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBUtil.cs" />
+    <Compile Include="forms\DismissionList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DismissionList.resx</DependentUpon>
+    </Compile>
+    <Compile Include="forms\DismissionList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Dispositivi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormAssociaTag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Fornitori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Globals.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\LettoriBadge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\LogOperazioni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="misc\InteropAmLogin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="misc\InteropKernel32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\Operatori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Query.Designer.cs">
+      <DependentUpon>Query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RFIDEventsExtension.cs" />
+    <Compile Include="RFIDManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="forms\Ricerca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Setup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\ArmadiLavatrici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\TipiDispositivi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="forms\ChooseItem.resx">
+      <DependentUpon>ChooseItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\ChooseSeed.resx">
+      <DependentUpon>ChooseSeed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\CicliDispositivoDettaglio.resx">
+      <DependentUpon>CicliDispositivoDettaglio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\ConfigurazioneScadenzaDispositivi.resx">
+      <DependentUpon>ConfigurazioneScadenzaDispositivi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\ConfigurazioneTransazioni.resx">
+      <DependentUpon>ConfigurazioneTransazioni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\AdditionalInfo.resx">
+      <DependentUpon>AdditionalInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\ChangeStateGeneric.resx">
+      <DependentUpon>ChangeStateGeneric.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\ConfigurazioneStatiDispositiviItemNewEdit.resx">
+      <DependentUpon>ConfigurazioneStatiDispositiviItemNewEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmDateSelect.resx">
+      <DependentUpon>FrmDateSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmReceiptsView.resx">
+      <DependentUpon>FrmReceiptsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmRecepitDetails.resx">
+      <DependentUpon>FrmRecepitDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\InsertText.resx">
+      <DependentUpon>InsertText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\LicenseForm.resx">
+      <DependentUpon>LicenseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\SediUO.resx">
+      <DependentUpon>SediUO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\StampaScontrino.resx">
+      <DependentUpon>StampaScontrino.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Causali.resx">
+      <DependentUpon>Causali.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\ChangePinUser.resx">
+      <DependentUpon>ChangePinUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\CheckUtente.resx">
+      <DependentUpon>CheckUtente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Chiavi_Log_Transazioni.resx">
+      <DependentUpon>Chiavi_Log_Transazioni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\CicliDispositivo.resx">
+      <DependentUpon>CicliDispositivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\ConfigurazioneStatiDispositivi.resx">
+      <DependentUpon>ConfigurazioneStatiDispositivi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\KleanTrak.resx">
+      <DependentUpon>KleanTrak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Database.resx">
+      <DependentUpon>Database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\DismissionList.resx">
+      <DependentUpon>DismissionList.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DismissionList.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Dispositivi.resx">
+      <DependentUpon>Dispositivi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormAssociaTag.resx">
+      <DependentUpon>FormAssociaTag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormInfo.resx">
+      <DependentUpon>FormInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Fornitori.resx">
+      <DependentUpon>Fornitori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\KMessageBox.resx">
+      <DependentUpon>KMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\LettoriBadge.resx">
+      <DependentUpon>LettoriBadge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\LogOperazioni.resx">
+      <DependentUpon>LogOperazioni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Operatori.resx">
+      <DependentUpon>Operatori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Query.resx">
+      <DependentUpon>Query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Ricerca.resx">
+      <DependentUpon>Ricerca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Setup.resx">
+      <DependentUpon>Setup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\ArmadiLavatrici.resx">
+      <DependentUpon>ArmadiLavatrici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\TipiDispositivi.resx">
+      <DependentUpon>TipiDispositivi.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\amrfidmgrex\amrfidmgrex.csproj">
+      <Project>{6d8824f9-c1df-4567-a681-1e560bdb573d}</Project>
+      <Name>amrfidmgrex</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Commons\Commons.csproj">
+      <Project>{1E12CC98-028A-42C2-BE50-C791ACCB6D65}</Project>
+      <Name>Commons</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KleanTrack.License\KleanTrack.License.csproj">
+      <Project>{d58e3829-973e-49f9-9fce-63090b9e63d7}</Project>
+      <Name>KleanTrack.License</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KleanTrak.Core\KleanTrak.Core.csproj">
+      <Project>{C9D58CF0-8447-4B1F-ADB9-B6DEC3ABBA83}</Project>
+      <Name>KleanTrak.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KleanTrak.Model\KleanTrak.Model.csproj">
+      <Project>{e57e6826-99b5-4b93-8907-4433772d5afd}</Project>
+      <Name>KleanTrak.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\libLog\libLog.csproj">
+      <Project>{fce9ffa6-9e74-4609-aa87-c578d5a0543a}</Project>
+      <Name>libLog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ListViewEx\ListViewEx.csproj">
+      <Project>{e063f0eb-a684-4782-ad4e-ba02030bd0d9}</Project>
+      <Name>ListViewEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MDGTest\MDGTest.csproj">
+      <Project>{b1a9af46-09f5-4383-8f4b-dabdeb34d73b}</Project>
+      <Name>MDGTest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OdbcExtensions\OdbcExtensions.csproj">
+      <Project>{dfd96021-e5ea-4ed1-9210-43fb4530cbbb}</Project>
+      <Name>OdbcExtensions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dictionary_KleanTrak.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="idr_main.ico" />
+    <None Include="resources\update.png" />
+    <None Include="resources\delete.png" />
+    <None Include="resources\add.png" />
+    <None Include="resources\block.png" />
+    <None Include="resources\check.png" />
+    <None Include="resources\barrier.png" />
+    <None Include="resources\close.png" />
+    <None Include="resources\clipboard.png" />
+    <None Include="resources\check2.png" />
+    <None Include="resources\configuration.png" />
+    <None Include="resources\cycles.png" />
+    <Content Include="resources\idr_main.ico" />
+    <None Include="resources\new_state.png" />
+    <None Include="resources\red_circle.png" />
+    <None Include="resources\rf.png" />
+    <None Include="resources\magnify.png" />
+    <None Include="resources\printer.png" />
+    <Content Include="resources\state.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="log4net">
+      <Version>2.0.8</Version>
+    </PackageReference>
+    <PackageReference Include="System.ValueTuple">
+      <Version>4.5.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>copy $(SolutionDir)Binaries\* $(TargetDir)
+copy $(SolutionDir)Binaries\LicenseManager\LocalLicenseChecker.dll.config $(TargetDir)
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

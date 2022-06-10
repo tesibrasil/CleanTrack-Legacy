@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<HIS Header="endoSTOREÂ® protocol">
+  <IN Header="Loading">
+    <EndoStore Caption="endoSTOREÂ®:" SerialNo="Serial number" GroupID="Group number" StorageUnitNo="Storage slot No.">
+      <SerialNo>
+      </SerialNo>
+      <GroupID>1</GroupID>
+      <Side>Master</Side>
+      <StorageUnitNo>4</StorageUnitNo>
+    </EndoStore>
+    <Owner Caption="Owner:" Name="Name" Department="Department" Street="Street" Number="No." ZIP="ZIP" City="City">
+      <Name>Humanitas</Name>
+      <Department>Endoscopia</Department>
+      <Street>Via Manzoni</Street>
+      <Number>56</Number>
+      <ZIP>20089</ZIP>
+      <City>Rozzano</City>
+    </Owner>
+    <Instrument Caption="Endoscope:" Barcode="Bar code" Name="Name" MaxStorageTime="Max. storage time (hours)">
+      <Barcode>16</Barcode>
+      <Name>EC-760R-V\l</Name>
+      <MaxStorageTime>720</MaxStorageTime>
+    </Instrument>
+    <PutIn Caption="Loading:" Time="Date / Time" UserName="User name" UserBarcode="User bar code">
+      <Time>2019-11-21T16:24:32</Time>
+      <UserName>OP999</UserName>
+      <UserBarcode>OP999</UserBarcode>
+    </PutIn>
+    <Processdata Caption="Process data:" Patientinfo="Patient's information" SecurityCheck="Security query" WdRunCycle="Cycle (reprocessing)" ActualRunCycle="Current cycle" ProcessResult="Process result" LastRunCycle="Last cycle" Runtime="Storage time">
+      <Patientinfo>
+      </Patientinfo>
+      <SecurityCheck>0</SecurityCheck>
+      <WdRunCycle>0</WdRunCycle>
+      <ActualRunCycle>0</ActualRunCycle>
+      <ProcessResult>1</ProcessResult>
+      <LastRunCycle>0</LastRunCycle>
+      <Runtime>0 d 00:00:00</Runtime>
+    </Processdata>
+  </IN>
+</HIS>

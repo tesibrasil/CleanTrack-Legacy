@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<HIS Header="Protocollo ENDODRY™">
+  <OUT Header="Scarico">
+    <EndoStore Caption="ENDODRY™:" SerialNo="Numero seriale" GroupID="Gruppo numero" StorageUnitNo="Posizione di stoccaggio N°">
+      <SerialNo>CM02171</SerialNo>
+      <GroupID>1</GroupID>
+      <Side>Master</Side>
+      <StorageUnitNo>6</StorageUnitNo>
+    </EndoStore>
+    <Owner Caption="Proprietario" Name="Nome" Department="Dipartimento" Street="Via" Number="N°" ZIP="CAP" City="Città">
+      <Name>
+      </Name>
+      <Department>SSD ENDOSCOPIA PASCALE</Department>
+      <Street>
+      </Street>
+      <Number>
+      </Number>
+      <ZIP>
+      </ZIP>
+      <City>
+      </City>
+    </Owner>
+    <Instrument Caption="Endoscopio:" Barcode="Codice  a barre" Name="Nome" MaxStorageTime="Tempo di stoccaggio massimo (ore)">
+      <Barcode>2066526</Barcode>
+      <Name>GIFHQ190</Name>
+      <MaxStorageTime>720</MaxStorageTime>
+    </Instrument>
+    <PutIn Caption="Carico:" Time="Data / Orario" UserName="Nome utente" UserBarcode="Codice a barre utente">
+      <Time>2021-05-12T10:01:43</Time>
+      <UserName>6133</UserName>
+      <UserBarcode>6133</UserBarcode>
+    </PutIn>
+    <TakeOut Caption="Scarico:" Time="Data / Orario" UserName="Nome utente" UserBarcode="Codice a barre utente">
+      <Time>2021-05-12T12:22:01</Time>
+      <UserName>9068</UserName>
+      <UserBarcode>9068</UserBarcode>
+    </TakeOut>
+    <Processdata Caption="Dati di processo:" Patientinfo="Informazioni sul paziente" SecurityCheck="Query di sicurezza" TransferResult="Risultato richiesta di trasferimento" WdRunCycle="Ciclo (reprocessing)" ActualRunCycle="Ciclo corrente" ProcessResult="Risultato del processo" LastRunCycle="Ultimo ciclo" Runtime="Tempo di stoccaggio" SettingTp1Pressure="Fase 1 di asciugatura a pressione" SettingTp1Duration="Durata delle fase 1 di asciugatura" SettingTp2Pressure="Fase 2 di asciugatura a pressione" SettingTp2Duration="Durata delle fase 2 di asciugatura" SettingStoragePressure="Fase di stoccaggio a pressione" SettingAirCirculation="Durata fase di ricircolo" SettingMaxDoorOpentime="Regolazione apertura porta max." SettingAirPrssureError="Regolazione errore aria compressa" SettingBypass="Regolazione bypass blocco inserimento" SettingSmartConnectOn="smart connect attivato" SettingSmartConnectTime="Tempo di trasporto smart connect [min]" SettingTransferOn="Trasferimento attivato" SettingTransferTime="Tempo di trasporto trasferimento [min]" SettingSensorFlow="Regolazione flusso" SettingSensorHumidity="Regolazione umidità" SettingSensorTemp="Regolazione temperatura">
+      <Patientinfo>
+      </Patientinfo>
+      <SecurityCheck>0</SecurityCheck>
+      <TransferResult>5</TransferResult>
+      <WdRunCycle>0</WdRunCycle>
+      <ActualRunCycle>187</ActualRunCycle>
+      <ProcessResult>0</ProcessResult>
+      <LastRunCycle>0</LastRunCycle>
+      <Runtime>0 d 02:20:18</Runtime>
+      <SettingTp1Pressure>0.5</SettingTp1Pressure>
+      <SettingTp1Duration>20</SettingTp1Duration>
+      <SettingTp2Pressure>0.3</SettingTp2Pressure>
+      <SettingTp2Duration>40</SettingTp2Duration>
+      <SettingStoragePressure>0.1</SettingStoragePressure>
+      <SettingAirCirculation>180</SettingAirCirculation>
+      <SettingMaxDoorOpentime>5</SettingMaxDoorOpentime>
+      <SettingAirPrssureError>50</SettingAirPrssureError>
+      <SettingBypass>False</SettingBypass>
+      <SettingSmartConnectOn>False</SettingSmartConnectOn>
+      <SettingSmartConnectTime>10</SettingSmartConnectTime>
+      <SettingTransferOn>False</SettingTransferOn>
+      <SettingTransferTime>30</SettingTransferTime>
+      <SettingSensorFlow>False</SettingSensorFlow>
+      <SettingSensorHumidity>False</SettingSensorHumidity>
+      <SettingSensorTemp>False</SettingSensorTemp>
+    </Processdata>
+    <Events Header="Evento  durante l'operazione:">
+      <Event Caption="Evento:" Time="Data / Orario" Description="Descrizione" AdditionalContent="Informazioni aggiuntive">
+        <Time>2021-05-12T10:01:44</Time>
+        <Description>Pressione aria OK</Description>
+        <AdditionalContent>---</AdditionalContent>
+      </Event>
+    </Events>
+  </OUT>
+</HIS>

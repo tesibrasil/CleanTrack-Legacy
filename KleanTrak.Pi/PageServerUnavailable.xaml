@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="KleanTrak.Pi.PageServerUnavailable"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:KleanTrak.Pi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Loaded="Page_Loaded">
+
+    <Grid Margin="30,30,30,30">
+        <Border Background="#FF303030" CornerRadius="10">
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Name="textError" Text="Impossibile contattare il server" Foreground="#FFFFFFFF" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <TextBlock Grid.Row="1" Name="textDevice" Text="Indirizzo dispositivo" Foreground="#FFFFFFFF" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <TextBlock Grid.Row="2" Name="textIP" Foreground="#FFFFFFFF" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" />
+                <TextBlock Grid.Row="3" Name="textServer" Text="Indirizzo server" Foreground="#FFFFFFFF" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <TextBlock Grid.Row="4" Name="textServerIP" Foreground="#FFFFFFFF" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" />
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

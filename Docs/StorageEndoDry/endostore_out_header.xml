@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<HIS Header="endoSTORE® Protokoll">
+  <OUT Header="Entnommen">
+    <EndoStore Caption="endoSTORE®:" SerialNo="Seriennummer" GroupID="Verbandsnummer" StorageUnitNo="Auszugsnummer">
+      <SerialNo>No-Serial</SerialNo>
+      <GroupID>1</GroupID>
+      <Side>Slave</Side>
+      <StorageUnitNo>1</StorageUnitNo>
+    </EndoStore>
+    <Instrument Caption="Endoskop:" Barcode="Barcode" Name="Name" MaxStorageTime="max. Lagerzeit (Stunden)">
+      <Barcode>199</Barcode>
+      <Name>199</Name>
+      <MaxStorageTime>72</MaxStorageTime>
+    </Instrument>
+    <PutIn Caption="Eingelegt:" Time="Datum/Uhrzeit" UserName="Benutzername" UserBarcode="Benutzerbarcode">
+      <Time>2014-11-11T18:41:38</Time>
+      <UserName>Service</UserName>
+      <UserBarcode>199</UserBarcode>
+    </PutIn>
+    <TakeOut Caption="Entnommen:" Time="Datum/Uhrzeit" UserName="Benutzername" UserBarcode="Benutzerbarcode">
+      <Time>2014-11-11T18:46:22</Time>
+      <UserName>Service</UserName>
+      <UserBarcode>199</UserBarcode>
+    </TakeOut>
+    <Processdata Caption="Prozessdaten:" Patientinfo="Patienteninfo" SecurityCheck="Sicherheitsabfrage" ProcessResult="Prozessergebnis" LastRunCycle="Letzte Bearbeitung">
+      <Patientinfo>
+      </Patientinfo>
+      <SecurityCheck>0</SecurityCheck>
+      <ProcessResult>1</ProcessResult>
+      <LastRunCycle>0</LastRunCycle>
+    </Processdata>
+    <Events Header="Ereignisse während des Vorgangs:">
+      <Event Caption="Ereignis:" Time="Datum/Uhrzeit" Description="Beschreibung" AdditionalContent="Zusätzliche Info">
+        <Time>2014-11-11T18:42:10</Time>
+        <Description>
+        </Description>
+        <AdditionalContent>Current Lost</AdditionalContent>
+      </Event>
+      <Event Caption="Ereignis:" Time="Datum/Uhrzeit" Description="Beschreibung" AdditionalContent="Zusätzliche Info">
+        <Time>2014-11-11T18:43:55</Time>
+        <Description>
+        </Description>
+        <AdditionalContent>Current Ok</AdditionalContent>
+      </Event>
+      <Event Caption="Ereignis:" Time="Datum/Uhrzeit" Description="Beschreibung" AdditionalContent="Zusätzliche Info">
+        <Time>2014-11-11T18:43:55</Time>
+        <Description>
+        </Description>
+        <AdditionalContent>Luftdruck Ok</AdditionalContent>
+      </Event>
+      <Event Caption="Ereignis:" Time="Datum/Uhrzeit" Description="Beschreibung" AdditionalContent="Zusätzliche Info">
+        <Time>2014-11-11T18:44:41</Time>
+        <Description>
+        </Description>
+        <AdditionalContent>Current Lost</AdditionalContent>
+      </Event>
+      <Event Caption="Ereignis:" Time="Datum/Uhrzeit" Description="Beschreibung" AdditionalContent="Zusätzliche Info">
+        <Time>2014-11-11T18:45:39</Time>
+        <Description>
+        </Description>
+        <AdditionalContent>Current Ok</AdditionalContent>
+      </Event>
+      <Event Caption="Ereignis:" Time="Datum/Uhrzeit" Description="Beschreibung" AdditionalContent="Zusätzliche Info">
+        <Time>2014-11-11T18:45:39</Time>
+        <Description>
+        </Description>
+        <AdditionalContent>Luftdruck Ok</AdditionalContent>
+      </Event>
+    </Events>
+    <MDSProtocol Header="Advantage® Protokoll:">
+      <Dummy>**** MDS Runcycle Daten Dummy ****</Dummy>
+    </MDSProtocol>
+  </OUT>
+</HIS>

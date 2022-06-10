@@ -1,0 +1,36 @@
+9.9 ----
+progetto kleantrak.server e kleantrak passa al dotnet framework 4.7
+versione 9.9 mai installata, si elimina tag dai sorgenti e cartella dalle matrici
+
+9.10 ---
+amrfidmanagerex modificata con nuove dll, registrare la dll in una directory che contenga TUTTE LE DLL che servono ad amrfidmanagerex.dll
+(vedere rilascio).
+creazione supporto uo -> sede_uo -> sede per associare gli stati ed i dispositivi alle sedi.
+necessaria attenzione durante lo script di seeding per creazione sedi ed uo.
+creazione vincoli su db e cambio nomi di diversi campi (quelli contenenti uo vengono aggiornati con idsede).
+In particolare:
+	- dispositivi: cambio uo con idsede e creato vincolo
+	inserire idsede di default al posto di uo
+	- vistadispositivi: uo con idsede da tabella dispsoitivi
+	- vistadispositiviultimociclo: uo con idsede da vistadispositivi
+	- operatori: creato vincolo con utenti in idutente e cambio id_utente in bigint
+	- operatori: creata tabella di collegamento OPERATORI_SEDI
+	- fornitori: inserita tabella di collegamento fornitore sede
+	- armadi_lavatrici: cambiato campo uo con idsede ed inserita relazione con tabella sedi
+	- (++) lettori: aggiunto idsede (non null), modifica su server perchè i lettori non devono essere consapevoli della sede
+	- (++) statocambio: aggionta idsede (non null)
+	lasciato nullable il campo idutente per gestire caso di utente sconosciuto
+	- cicliext: cambio campo idcicli in idciclo ed inserito vincolo con tabella cicli (necessaria pulizia in script di upgrade)
+
+ATTENZIONE: i lettori devono essere smistati correttamente tra le sedi.
+ATTENZIONE: gli staticambio devono essere replicati tra tutte le sedi (vengono associati a quella con min id)
+esempio di query (esempio per inserimento in idsede = 1):
+insert into statocambio (idstatoold, idstatonew, idsede, eliminato) select idstatoold, idstatonew, 1, 0 from statocambio where eliminato = 0 and idsede = 0
+ATTENZIONE: le lavaendoscopi devono essere suddivise per sede
+ATTENZIONE: le sedi prendono il posto delle uo -> tutte le sedi sotto la stessa uo (altrimenti cambiare)
+ATTENZIONE: si deve cambiare la descirzione di ogni sede (di default 'TO_DEFINE')
+
+database portato tutto in maiuscolo.
+Eliminazione elemento globale UO, sostituito con IDSEDE, sostituire anche nel file ini.
+Operatori: filtrati per idsede
+Inserito interfacciamento con Software ICT Group per interfacciamento lavaendoscopi Steelco
